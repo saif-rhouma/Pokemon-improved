@@ -1,0 +1,49 @@
+.AppHeader {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+.AppHeader ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  padding: 0px 20px;
+  margin: 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  position: relative;
+}
+.AppHeader ul > li:first-child {
+  display: flex;
+  width: 100%;
+}
+.AppHeader ul li input {
+  border: 0;
+  display: flex;
+  width: 100%;
+  padding: 10px 0px;
+}
+.AppHeader ul > li:last-child {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--darkPink);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.AppHeader ul > li:last-child:hover {
+  transform: scale(1.2);
+}

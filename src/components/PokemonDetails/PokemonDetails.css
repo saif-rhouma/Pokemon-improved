@@ -1,0 +1,81 @@
+.PokemonDetails {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.PokemonDetails .details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+  width: 600px;
+  height: 300px;
+
+  background-color: var(--bgColor);
+  border: 10px solid var(--yellow);
+}
+
+.PokemonDetails .details-title {
+  background-color: var(--darkPink);
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0px 40px;
+  border-radius: 20px;
+  margin-top: -30px;
+}
+
+.PokemonDetails .details-title > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PokemonDetails .details-title > ul > li:last-child {
+  padding: 10px;
+}
+
+.PokemonDetails .details-title > ul > li:first-child {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  width: 60px;
+  align-self: stretch;
+}
+
+.details-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.details-content table {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.details-content table > tbody {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.details-content table > tbody > tr {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 5px 0px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}

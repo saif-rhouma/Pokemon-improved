@@ -1,0 +1,15 @@
+:root {
+  --bgColor: #736faa;
+  --darkBg: #684484;
+  --yellow: #ffe586;
+  --pink: #f3a6b0;
+  --darkPink: #ed6d84;
+}
+
+body {
+  background-color: var(--bgColor);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+

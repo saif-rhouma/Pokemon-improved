@@ -1,0 +1,36 @@
+.AppContainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 150px;
+  flex: 1 1 auto;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 576px) {
+  .AppContainer {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .AppContainer {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .AppContainer {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .AppContainer {
+    width: 1140px;
+  }
+}

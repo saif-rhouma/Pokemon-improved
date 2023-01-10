@@ -1,0 +1,55 @@
+.PokemonCard {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 260px;
+  height: 260px;
+}
+.pok-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: var(--darkBg);
+  transition: all 0.2s ease-in-out;
+  border: 10px solid var(--yellow);
+  cursor: pointer;
+}
+
+.pok-container:hover {
+  transform: scale(1.2);
+}
+.pok-container > ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.pok-container > ul > li:last-child {
+  text-transform: capitalize;
+  color: #fff;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--darkPink);
+  font-size: 20px;
+  margin-top: 110px;
+  z-index: 1;
+}
+
+.pok-container > ul > li:first-child {
+  position: absolute;
+  top: -20px;
+}
+
+.pok-container > ul > li > img {
+  width: 140px;
+  height: 140px;
+}
